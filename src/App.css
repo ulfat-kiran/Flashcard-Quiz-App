@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.flashcard {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card-top {
+  display: flex;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.card-content {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content h2 {
+  font-size: 25px;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+
+.hidden-answer {
+  color: #9ca3af;
+}
+
+.answer-box {
+  width: 100%;
+  background: #f0fdf4;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 10px;
+}
+
+.answer-box strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.answer-box p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.show-answer-btn {
+  background: #111827;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.navigation button {
+  background: #e5e7eb;
+  color: #111827;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card-actions button {
+  border: none;
+  padding: 9px 18px;
+  border-radius: 7px;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.main-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.main-actions button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.reset-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.form-box {
+  background: white;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-box h2 {
+  margin-top: 0;
+}
+
+.form-box label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  outline: 2px solid #2563eb;
+  border-color: transparent;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+}
+
+.save-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.saved-message {
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  .header h1 {
+    font-size: 27px;
+  }
+
+  .flashcard {
+    padding: 20px;
+  }
+
+  .card-content {
+    min-height: 200px;
+  }
+
+  .card-content h2 {
+    font-size: 21px;
+  }
+
+  .main-actions {
+    flex-direction: column;
+  }
+
+  .main-actions button {
+    width: 100%;
+  }
+
+  .navigation button {
+    padding: 10px 14px;
+  }
+   .card-actions {
+    flex-direction: column;
+  }
+ .card-actions button {
+    width: 100%;
+  }
+}
